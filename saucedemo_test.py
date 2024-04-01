@@ -50,7 +50,7 @@ zipCode_input.send_keys("123456")
 
 continue_button = driver.find_element(By.ID,"continue")
 continue_button.click()
-time.sleep(5)
+time.sleep(4)
 
 # finish
 finish_button = driver.find_element(By.ID, "finish")
@@ -60,7 +60,7 @@ time.sleep(4)
 # step 4: Check if the "Thank you" message is present on the page
 thank_you_message = driver.find_element(By.XPATH,"//h2[contains(text(), 'Thank you for your order')]")
 assert thank_you_message.is_displayed(), "Thank you message not found on the page."
-time.sleep(5)
+time.sleep(4)
 
 # Close the browser
 driver.quit()
