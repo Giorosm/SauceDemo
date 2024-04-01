@@ -6,3 +6,5 @@ this solution integrates unit test in the following units:
 •	verify "Thank you" page
 
 url: https://www.saucedemo.com/
+
+the src code included in "saucedemo_test.py"
