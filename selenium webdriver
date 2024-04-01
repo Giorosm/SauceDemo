@@ -1,0 +1,20 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+# Initialize the WebDriver (you need to have appropriate driver executable in your PATH)
+driver = webdriver.Chrome()  # You can use other browsers like Firefox or Edge by using appropriate WebDriver
+
+# Open a webpage
+driver.get("https://www.example.com")
+
+# Find an element by its CSS selector and interact with it
+search_box = driver.find_element_by_css_selector("input[type='text']")
+search_box.send_keys("Hello, World!")  # Type "Hello, World!" into the search box
+search_box.send_keys(Keys.RETURN)  # Press Enter key
+
+# Find another element and get its text
+heading = driver.find_element_by_css_selector("h1")
+print("Heading Text:", heading.text)
+
+# Close the browser
+driver.quit()
