@@ -1,4 +1,4 @@
-This task is a demonstration of software testing using python along with selenium framework 
+This task is a demonstration of software testing using python along with selenium framework, 
 this solution integrates unit test in the following units: 
 •	login
 •	add first item to cart
